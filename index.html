@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+       #clock{
+        border: 2px solid;
+        padding: 15px;
+        width: 25%;
+        text-align: center;
+        border-radius: 4px;
+        background-color: black;
+        color: white;
+        margin: auto;
+       }
+       h1{
+        text-align: center;
+        padding: 20px;
+        margin: auto;
+       }
+
+       @media (max-width:854px) {
+          #clock{
+            width: 80%;
+          }
+       }
+
+    </style>
+</head>
+<body onload="showTime()">
+    <h1>Timer Watch</h1>
+    <h1 id="clock">
+        <span id(da)></span>
+    </h1>
+
+</body>
+ <script src="./index.js"> </script>
+</html>
